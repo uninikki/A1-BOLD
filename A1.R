@@ -49,7 +49,7 @@ corvid_histogram <- ggplot(df_continents, aes(x=Continent, y=Frequency, fill=Con
 # load in a  file from https://population.un.org/wup/Download/Files/WUP2018-F02-Proportion_Urban.xls
 # Downloaded .xls file and removed header elements and unused column years in excel. Saved the result as a .csv file. Couldn't figure out how to do this in R :(
 
-df_urbanization <- read.csv(file = "C://Users/draco/OneDrive/Documents/uni course work/BINF6210/Proportion_Urban.csv")
+df_urbanization <- read.csv(file = ".../data/Proportion_Urban.csv")
 df_urbanization <- rename(df_urbanization, "Country"=Region..subregion..country.or.area)
 df_urbanization <- rename(df_urbanization, "Percent_Urban"=X2020)
 
